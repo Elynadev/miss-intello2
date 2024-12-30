@@ -38,6 +38,11 @@ class PageController extends Controller
     {
         return Inertia::render('Evenement');
     }
-  
+
+    public function blog()
+    {
+        return Inertia::render('blog');
+    }
+
 }
 

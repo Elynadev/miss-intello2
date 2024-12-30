@@ -32,5 +32,6 @@ Route::get('/about', [PageController::class, 'about']);
 Route::get('/inscription', [PageController::class, 'inscription']);
 Route::get('/evenement', [PageController::class, 'evenement']);
 Route::get('/about', [PageController::class,  'about']);
+Route::get('/blog', [PageController::class,  'blog']);
 
 require __DIR__.'/auth.php';
