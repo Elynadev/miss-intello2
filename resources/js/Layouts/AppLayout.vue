@@ -11,8 +11,8 @@
             <Link href="/evenement" class="text-green-700 hover:text-primary">Événement</Link>
             <Link href="/inscription" class="text-green-700 hover:text-primary">Inscription</Link>
             <Link href="/blog" class="text-green-700 hover:text-primary">Blog</Link>
-            <Link href="/about" class="text-green-700 hover:text-primary">    A propos</Link>
-            <Link href="/evenement" class="text-green-700 hover:text-primary">ee</Link>
+            <Link href="/about" class="text-green-700 hover:text-primary">A propos</Link>
+
           </nav>
         </div>
       </header>

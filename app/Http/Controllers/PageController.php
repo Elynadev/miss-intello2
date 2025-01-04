@@ -41,7 +41,7 @@ class PageController extends Controller
 
     public function blog()
     {
-        return Inertia::render('blog');
+        return Inertia::render('Blog');
     }
 
 }

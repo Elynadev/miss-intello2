@@ -5,80 +5,63 @@
 
         <!-- Liste des articles -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Article 1 -->
-          <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <article
+            v-for="article in articles.data"
+            :key="article.id"
+            class="bg-white rounded-lg shadow-lg overflow-hidden"
+          >
             <img
-              src="path/to/image1.jpg"
-              alt="Image de l'article 1"
+              :src="`/storage/${article.image}`"
+              :alt="article.title"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <span class="text-sm text-blue-500 font-medium">#Catégorie</span>
-              <h3 class="text-xl font-semibold my-3">Titre de l'article 1</h3>
+              <span class="text-sm text-blue-500 font-medium">
+                #{{ article.category?.name || 'Sans catégorie' }}
+              </span>
+              <h3 class="text-xl font-semibold my-3">{{ article.title }}</h3>
               <p class="text-gray-600 mb-4">
-                Aperçu de l'article. Limitez le texte à 2-3 lignes pour inciter les visiteurs à en lire davantage.
+                {{ article.content.substring(0, 100) }}...
               </p>
               <a
-                href="#"
+                :href="`/blog/${article.id}`"
                 class="text-blue-500 hover:underline font-medium"
                 >Lire la suite &rarr;</a
               >
             </div>
           </article>
-
-          <!-- Article 2 -->
-          <article class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img
-              src="path/to/image2.jpg"
-              alt="Image de l'article 2"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <span class="text-sm text-blue-500 font-medium">#Catégorie</span>
-              <h3 class="text-xl font-semibold my-3">Titre de l'article 2</h3>
-              <p class="text-gray-600 mb-4">
-                Aperçu de l'article. Limitez le texte à 2-3 lignes pour inciter les visiteurs à en lire davantage.
-              </p>
-              <a
-                href="#"
-                class="text-blue-500 hover:underline font-medium"
-                >Lire la suite &rarr;</a
-              >
-            </div>
-          </article>
-
-          <!-- Ajouter d'autres articles ici -->
         </div>
 
         <!-- Pagination -->
         <div class="mt-12 flex justify-center">
           <nav class="flex space-x-2">
-            <a
-              href="#"
+            <button
+              v-if="articles.links.prev"
+              @click="changePage(articles.links.prev)"
               class="px-4 py-2 bg-gray-200 text-gray-600 rounded-lg hover:bg-gray-300"
-              >Précédent</a
             >
-            <a
-              href="#"
-              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
-              >1</a
-            >
-            <a
-              href="#"
+              Précédent
+            </button>
+            <button
+              v-if="articles.links.next"
+              @click="changePage(articles.links.next)"
               class="px-4 py-2 bg-gray-200 text-gray-600 rounded-lg hover:bg-gray-300"
-              >2</a
             >
-            <a
-              href="#"
-              class="px-4 py-2 bg-gray-200 text-gray-600 rounded-lg hover:bg-gray-300"
-              >Suivant</a
-            >
+              Suivant
+            </button>
           </nav>
         </div>
       </div>
     </section>
   </template>
+
   <script setup>
-  // Logic for the accueil page (if necessary)
-  import AppLayoutVue from '../Layouts/AppLayout.vue';
-</script>
+  import { ref } from "vue";
+  import { Inertia } from "@inertiajs/inertia";
+
+  const props = defineProps(["articles"]);
+
+  const changePage = (url) => {
+    Inertia.get(url);
+  };
+  </script>

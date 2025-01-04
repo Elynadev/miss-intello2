@@ -52,7 +52,7 @@
                 class="absolute inset-0 bg-gradient-to-b from-primary-900/70 to-transparent px-10 animate-pulse"
               >
                 <img
-                  src="/final.jpg "
+                  src="image/final.jpg"
                   alt="Crown Background"
                   class="w-full h-full object-cover opacity-50"
                 />
@@ -65,41 +65,38 @@
               </div>
               <!-- Central question -->
               <div
-                class="absolute inset-0 flex flex-col items-center justify-center text-center p-8"
+                class="absolute inset-0 flex flex-col items-center justify-end text-center p-12"
               >
                 <h2
-                  class="text-5xl font-bold text-white mb-6 transform transition-all duration-700 hover:scale-110 aos-init aos-animate"
+                  class="text-4xl font-bold text-white mb-4 transform transition-all duration-700 hover:scale-110 aos-init aos-animate"
                   data-aos="zoom-in"
                   data-aos-delay="300"
                 >
-                  Qui sera la Reine ?
+                La Miss Intello-Citoyenne 2025
                 </h2>
-                <!-- <p
-                  class="text-2xl text-black-800 text-primary-800 max-w-2xl mx-auto aos-init aos-animate"
+                <p
+                  class="text-1xl text-black-800 text-primary-800 max-w-2xl mx-auto aos-init aos-animate"
                   data-aos="fade-up"
                   data-aos-delay="600"
                 >
-                  Découvrez qui sera couronnée Miss Intello-Citoyenne 2024 lors de
-                  notre grande finale
-                </p> -->
-                <!-- Date -->
+                Nommée reine le 15 décembre 2025, Gloria KASSA
+                </p>
                 <div
                   class="mt-8 bg-primary-900/50 backdrop-blur-sm px-8 py-4 rounded-full aos-init aos-animate"
                   data-aos="fade-up"
                   data-aos-delay="900"
                 >
-                  <p class="text-xl text-white font-light">
-                    14 Décembre 2024 - Maison des jeunes, Agla- Cotonou
-                  </p>
+                <p>Nommée reine le 15 décembre 2025, Gloria KASSA </p>
+
                 </div>
               </div>
               <!-- Decorative elements -->
               <div
-                class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-primary-900/70 to-transparent"
+                class="absolute bottom-0 left-0 w-full h-32 bg-white from-primary-900/70 to-transparent"
               ></div>
             </div>
 
-            <a href="#inscription" class="btn-primary">S'inscrire maintenant</a>
+            <a href="inscription" class="btn-primary bg-blue-">S'inscrire maintenant</a>
           </div>
         </div>
       </section>
@@ -109,5 +106,4 @@
 
   <script setup>
     // Logic for the accueil page (if necessary)
-    import AppLayoutVue from '../Layouts/AppLayout.vue';
-  </script>
+      </script>
