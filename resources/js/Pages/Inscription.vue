@@ -1,6 +1,6 @@
 <template>
     <!-- Inscription Section -->
-    <section id="inscription" class="py-20 bg-green-50">
+    <section id="inscription" class="py-20 bg-gradient-to-r from-[#2E7D32] to-[#4CAF50] min-h-screen">
       <div class="container mx-auto px-4 max-w-3xl">
 
         <!-- Introduction Paragraph -->

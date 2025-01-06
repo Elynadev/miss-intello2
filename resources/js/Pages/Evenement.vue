@@ -1,5 +1,5 @@
 <template>
-    <section id="evenements-a-venir" class="py-16 bg-gray-100">
+    <section id="evenements-a-venir" class="py-16 g-gradient-to-r from-[#2E7D32] to-[#4CAF50] min-h-screen">
       <div class="container mx-auto px-4 max-w-6xl">
         <h2 class="text-3xl font-bold text-center mb-12">Événements à Venir</h2>
 

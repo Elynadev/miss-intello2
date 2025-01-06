@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-gray-200 flex items-center justify-center">
+    <div class="min-h-screen bg-gradient-to-r from-[#2E7D32] to-[#4CAF50] min-h-screen flex items-center justify-center">
       <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
         <h1 class="text-4xl font-bold text-center text-purple-600 mb-4">À propos de nous</h1>
         <p class="text-center text-gray-700">Nous sommes une équipe dédiée à vous offrir le meilleur service.</p>

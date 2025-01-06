@@ -1,5 +1,5 @@
 <template>
-    <section id="galerie" class="py-20 bg-gray-50">
+    <section id="galerie" class="py-20 bg-gradient-to-r from-[#2E7D32] to-[#4CAF50] min-h-screen">
       <div class="container mx-auto px-4 max-w-6xl">
         <h2 class="text-3xl font-semibold text-center mb-12">Nos Moments Inspirants</h2>
 
@@ -8,12 +8,30 @@
           <h3 class="text-xl font-semibold mb-4">Albums Photo</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img src="path/to/photo1.jpg" alt="Edition 2023" class="w-full h-48 object-cover">
+
+                <img src="image/mi.jpg" alt="Edition 2023" class="w-full h-48 object-cover">
+
               <div class="p-4">
                 <h4 class="text-lg font-semibold">Édition 2023</h4>
                 <p class="text-sm text-gray-500">Un moment inoubliable avec des candidates exceptionnelles.</p>
               </div>
             </div>
+
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+
+                    <img src="image/mi.jpg" alt="Edition 2023" class="w-full h-48 object-cover">
+
+                  <div class="p-4">
+                    <h4 class="text-lg font-semibold">Édition 2023</h4>
+                    <p class="text-sm text-gray-500">Un moment inoubliable avec des candidates exceptionnelles.</p>
+                  </div>
+                </div>
+
+
+
+
+
             <!-- Add other albums here -->
           </div>
         </div>

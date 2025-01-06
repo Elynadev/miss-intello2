@@ -1,5 +1,5 @@
 <template>
-    <section id="blog" class="py-16 bg-gray-50">
+    <section id="blog" class="py-16 bg-gradient-to-r from-[#2E7D32] to-[#4CAF50] min-h-screen">
       <div class="container mx-auto px-4 max-w-6xl">
         <h2 class="text-4xl font-bold text-center mb-12">Notre Blog</h2>
 
